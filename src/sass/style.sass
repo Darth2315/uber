@@ -131,6 +131,7 @@ nav
         text-transform: uppercase
 
 .label
+    position: relative
     margin: 0 auto
     height: 24px
     width: 112px
@@ -141,8 +142,13 @@ nav
     font-weight: 300
     text-transform: uppercase
     text-align: center
+    z-index: 2
+    &_white
+        background-color:#ffffff
+        color: #070716
 
 .title
+    position: relative
     margin-bottom: 0
     margin-top: 38px
     color: #222222
@@ -150,13 +156,21 @@ nav
     font-weight: 700
     text-transform: uppercase
     text-align: center
+    z-index: 2
+    &_white
+        color: #ffffff
 
 .subtitle
+    position: relative
     margin-top: 19px
     color: #222222
     font-size: 17px
     font-weight: 400
     text-align: center
+    z-index: 2
+    &_white
+        color: #ffffff
+        margin-top: 5px
 
 .reasons
     padding: 71px 0 65px 0
@@ -193,6 +207,72 @@ nav
         line-height: 21px
 
 .mobile
-    height: 864px
+    min-height: 864px
     padding: 48px 0 80px 0
-    background: url('../img/bg/bg-mob-app.png')
+    background: url('../img/bg/bg-mob-app.png') center (center / cover) no-repeat
+    .row
+        margin-top: 32px
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        padding-top: 91px
+        &_1
+            background: url('../img/mob-app/app-1.jpg') center (center / cover) no-repeat
+        &_2
+            background: url('../img/mob-app/app-2.jpg') center (center / cover) no-repeat
+        &_3
+            background: url('../img/mob-app/app-3.jpg') center (center / cover) no-repeat
+        &_4
+            background: url('../img/mob-app/app-4.jpg') center (center / cover) no-repeat
+        &_5
+            background: url('../img/mob-app/app-5.jpg') center (center / cover) no-repeat
+        &_6
+            background: url('../img/mob-app/app-6.jpg') center (center / cover) no-repeat
+        &_subtitle
+            color: #ffffff
+            font-size: 24px
+            font-weight: 400
+            line-height: 31px
+            text-align: center
+            text-transform: uppercase
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 35px
+            width: 26px
+            height: 26px
+            background-color: #000000
+            margin: 0 auto
+            border-radius: 100%
+            cursor: pointer
+.uberx
+    position: relative
+    height: 896px
+    padding: 57px 0 138px 0
+    background: url('../img/bg/bg-mob-app.png') center (center / cover) no-repeat
+    &_img
+        position: relative
+        display: block
+        margin: 56px auto 0 auto
+        z-index: 2
+    &_descr
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
+    .dark_blue
+        position: absolute
+        height: 499px
+        background-color: #070716
+        z-index: 1
+        top: 0
+        left: 0
+        width: 100%
