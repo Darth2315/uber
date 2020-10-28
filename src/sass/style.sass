@@ -305,3 +305,33 @@ nav
     &_list
         list-style-type: none
         padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 10px
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/terms/term-blue.png') center (center / cover) no-repeat
+    &_descr
+        margin-top: 25px
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        color: #1ca8c3
+    .warning
+        .require_title
+            color: $requirement_color
+        .require_list
+            li
+                &:before
+                    background: url('../icons/terms/term-red.png') center (center / cover) no-repeat
+                    
