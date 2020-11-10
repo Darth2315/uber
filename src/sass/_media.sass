@@ -108,7 +108,7 @@
         &_item
             padding-right: 0
             border: 0
-            margin-top: 12px
+            margin: 10px 0
         &_link
             font-size: 20px
     .hamburger
@@ -173,10 +173,12 @@
             font-weight: 400
             margin-top: 11px
         &_btn
-            width: 110px
+            width: 112px
             height: 22px
             font-size: 10px
             margin-top: 6px
+            &:hover
+                background-image: linear-gradient(to top, $reason_color 0%, #4ce2ff 100%)
     .promo
         min-height: 400px
         padding: 93px 0 35px 0
@@ -195,8 +197,16 @@
             width: 210px
             height: 50px
             margin-top: 72px
+            &:hover
+                background-image: linear-gradient(to top, $reason_color 0%, #4ce2ff 100%)
     .menu
         width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 5px 0
+        &_link
+            display: block
     .reasons
         padding: 22px 0 36px 0
         &_block
@@ -294,4 +304,4 @@
                 a
                     margin: 0 7px
             &_lang
-                margin-top: 10px    
+                margin-top: 10px   
