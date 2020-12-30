@@ -367,12 +367,20 @@
     </footer>
 
     <div class="overlay">
-        <div class="modal">
-            <form action="">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Телефон">
-                <button>Отправить</button>
+        <div class="modal" id="callback">
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">Укажите ваше имя и телефон</div>
+            <form action="#">
+                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="phone" required type="text" placeholder="Ваш телефон">
+                <button class="modal_btn">Отправить</button>
             </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">Спасибо за вашу заявку!</div>
+            <div class="modal_descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
 
